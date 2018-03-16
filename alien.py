@@ -42,10 +42,10 @@ class Alien(Sprite):
         """如果外星人位于屏幕边缘，就返回true"""
         screen_rect = self.screen.get_rect()
         if self.rect.right >= screen_rect.right:
-            print(str(self.rect.right))
+       #     print(str(self.rect.right))
             return True
         elif self.rect.left <= 0:
-            print(str(self.rect.left))
+        #    print(str(self.rect.left))
             return True
         else:
             return False
